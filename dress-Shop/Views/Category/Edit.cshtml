@@ -11,7 +11,8 @@
     </div>
     <div class="card-body p-4">
         <form method="post" class="row">
-            <div class="border p-3">
+            <input asp-for="Id" hidden/>
+            <div class="border p-3 mt-4">
                 <div class="form-floating py-2 col-12">
                     <input asp-for="Name" class="form-control border-0 shadow" />
                     <label asp-for="Name" class="ms-2"></label>
@@ -25,7 +26,7 @@
 
                 <div class="row">
                     <div class="col-6 col-md-3">
-                        <button type="submit" class="btn btn-primary form-control"></button>
+                        <button type="submit" class="btn btn-primary form-control">Update</button>
                     </div>
 
                     <div class="col-6 col-md-3">

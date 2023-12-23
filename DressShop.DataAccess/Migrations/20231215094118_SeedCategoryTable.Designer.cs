@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using dress_Shop.Data;
+using DressShop.DataAccess.Data;
 
 #nullable disable
 
-namespace dress_Shop.Migrations
+namespace DressShop.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20231215094118_SeedCategoryTable")]

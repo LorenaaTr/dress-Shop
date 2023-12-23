@@ -1,4 +1,4 @@
-using dress_Shop.Data;
+using DressShop.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

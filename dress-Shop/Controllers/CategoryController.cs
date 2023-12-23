@@ -1,5 +1,6 @@
-﻿using dress_Shop.Data;
-using dress_Shop.Models;
+﻿
+using DressShop.DataAccess.Data;
+using DressShop.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
