@@ -3,6 +3,7 @@ using DressShop.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DressShop.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231224214232_addImageUrlToProduct")]
+    partial class addImageUrlToProduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -73,10 +76,6 @@ namespace DressShop.DataAccess.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -108,7 +107,6 @@ namespace DressShop.DataAccess.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            Description = "Elegant Satin dress perfect for wedding",
                             ImageUrl = "",
                             ListPrice = 105.0,
                             Price = 75.0,
@@ -120,7 +118,6 @@ namespace DressShop.DataAccess.Migrations
                         {
                             Id = 2,
                             CategoryId = 1,
-                            Description = "Classy and Unique dress, made with love to celebreate feelings",
                             ImageUrl = "",
                             ListPrice = 125.0,
                             Price = 85.0,
@@ -132,7 +129,6 @@ namespace DressShop.DataAccess.Migrations
                         {
                             Id = 3,
                             CategoryId = 2,
-                            Description = "Casual dress, perfect for holidays fashion week",
                             ImageUrl = "",
                             ListPrice = 125.0,
                             Price = 85.0,
@@ -144,7 +140,6 @@ namespace DressShop.DataAccess.Migrations
                         {
                             Id = 4,
                             CategoryId = 2,
-                            Description = "Casual every day dress, look stylish",
                             ImageUrl = "",
                             ListPrice = 55.0,
                             Price = 30.0,
@@ -156,7 +151,6 @@ namespace DressShop.DataAccess.Migrations
                         {
                             Id = 5,
                             CategoryId = 6,
-                            Description = "Black Leather dress for unforgettable look",
                             ImageUrl = "",
                             ListPrice = 92.0,
                             Price = 80.0,
@@ -168,7 +162,6 @@ namespace DressShop.DataAccess.Migrations
                         {
                             Id = 6,
                             CategoryId = 6,
-                            Description = "Short leather dress, best choise for date night",
                             ImageUrl = "",
                             ListPrice = 35.0,
                             Price = 25.0,

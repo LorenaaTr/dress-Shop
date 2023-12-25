@@ -25,7 +25,11 @@ namespace DressShop.DataAccess.Data
                     ListPrice = 105,
                     Price = 75,
                     Price50 = 50, 
-                    Price100 = 25 },
+                    Price100 = 25,
+                    CategoryId = 1,
+                    ImageUrl = "",
+                    Description = "Elegant Satin dress perfect for wedding"
+                },
                  new Product
                  {
                      Id = 2,
@@ -33,7 +37,10 @@ namespace DressShop.DataAccess.Data
                      ListPrice = 125,
                      Price = 85,
                      Price50 = 40,
-                     Price100 = 35
+                     Price100 = 35,
+                     CategoryId = 1,
+                     ImageUrl = "",
+                     Description = "Classy and Unique dress, made with love to celebreate feelings"
                  },
                    new Product
                    {
@@ -42,7 +49,10 @@ namespace DressShop.DataAccess.Data
                        ListPrice = 125,
                        Price = 85,
                        Price50 = 40,
-                       Price100 = 35
+                       Price100 = 35,
+                       CategoryId = 2,
+                       ImageUrl = "",
+                       Description = "Casual dress, perfect for holidays fashion week"
                    },
                     new Product
                     {
@@ -51,7 +61,10 @@ namespace DressShop.DataAccess.Data
                         ListPrice = 55,
                         Price = 30,
                         Price50 = 20,
-                        Price100 = 10
+                        Price100 = 10,
+                        CategoryId = 2,
+                        ImageUrl = "",
+                        Description = "Casual every day dress, look stylish"
                     },
                      new Product
                      {
@@ -60,7 +73,10 @@ namespace DressShop.DataAccess.Data
                          ListPrice = 92,
                          Price = 80,
                          Price50 = 55,
-                         Price100 = 25
+                         Price100 = 25,
+                         CategoryId = 6,
+                         ImageUrl = "",
+                         Description = "Black Leather dress for unforgettable look"
                      },
                       new Product
                       {
@@ -69,7 +85,10 @@ namespace DressShop.DataAccess.Data
                           ListPrice = 35,
                           Price = 25,
                           Price50 = 10,
-                          Price100 = 5
+                          Price100 = 5,
+                          CategoryId = 6,
+                          ImageUrl = "",
+                          Description = "Short leather dress, best choise for date night"
                       }
                 );
         }

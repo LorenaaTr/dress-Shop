@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DressShop.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231224203407_addForeignKeyForCategoryProductRelation")]
+    [Migration("20231224213606_addForeignKeyForCategoryProductRelation")]
     partial class addForeignKeyForCategoryProductRelation
     {
         /// <inheritdoc />
@@ -102,7 +102,7 @@ namespace DressShop.DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            CategoryId = 0,
+                            CategoryId = 1,
                             ListPrice = 105.0,
                             Price = 75.0,
                             Price100 = 25.0,
@@ -112,7 +112,7 @@ namespace DressShop.DataAccess.Migrations
                         new
                         {
                             Id = 2,
-                            CategoryId = 0,
+                            CategoryId = 1,
                             ListPrice = 125.0,
                             Price = 85.0,
                             Price100 = 35.0,
@@ -122,7 +122,7 @@ namespace DressShop.DataAccess.Migrations
                         new
                         {
                             Id = 3,
-                            CategoryId = 0,
+                            CategoryId = 2,
                             ListPrice = 125.0,
                             Price = 85.0,
                             Price100 = 35.0,
@@ -132,7 +132,7 @@ namespace DressShop.DataAccess.Migrations
                         new
                         {
                             Id = 4,
-                            CategoryId = 0,
+                            CategoryId = 2,
                             ListPrice = 55.0,
                             Price = 30.0,
                             Price100 = 10.0,
@@ -142,7 +142,7 @@ namespace DressShop.DataAccess.Migrations
                         new
                         {
                             Id = 5,
-                            CategoryId = 0,
+                            CategoryId = 6,
                             ListPrice = 92.0,
                             Price = 80.0,
                             Price100 = 25.0,
@@ -152,7 +152,7 @@ namespace DressShop.DataAccess.Migrations
                         new
                         {
                             Id = 6,
-                            CategoryId = 0,
+                            CategoryId = 6,
                             ListPrice = 35.0,
                             Price = 25.0,
                             Price100 = 5.0,
