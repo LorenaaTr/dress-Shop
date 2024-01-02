@@ -2,6 +2,8 @@
 using DressShop.DataAccess.Repository.IRepository;
 using DressShop.Models;
 using DressShop.Models.ViewModels;
+using DressShop.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,6 +13,7 @@ using static System.Net.Mime.MediaTypeNames;
 namespace dress_Shop.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

@@ -1,12 +1,15 @@
 ﻿using DressShop.DataAccess.Data;
 using DressShop.DataAccess.Repository.IRepository;
 using DressShop.Models;
+using DressShop.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace dress_Shop.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
