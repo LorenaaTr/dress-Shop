@@ -25,6 +25,16 @@ namespace DressShop.DataAccess.Data
                 new Category { Id = 2, Name = "Simple", DisplayOrder = 2 },
                 new Category { Id = 3, Name = "Leather", DisplayOrder = 3 }
                 );
+
+            modelBuilder.Entity<Company>().HasData(
+               new Company { Id = 1, Name = "ZaraShop",StreetAddress="123 Albi Mall", 
+                  City="Prishtina", State="Kosova", PostalCode="10000", PhoneNumber="038111222"},
+               new Company { Id = 2, Name = "S.Oliver", StreetAddress = "123 Albi Mall",
+                   City = "Prishtina", State = "Kosova",PostalCode = "10000", PhoneNumber = "038111222" },
+               new Company { Id = 3, Name = "Bershka",StreetAddress = "123 Albi Mall",
+                   City = "Prishtina",State = "Kosova", PostalCode = "10000",PhoneNumber = "038111222"  }
+               );
+
             modelBuilder.Entity<Product>().HasData(
                 new Product {
                     Id = 1,

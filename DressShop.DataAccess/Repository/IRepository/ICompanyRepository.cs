@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DressShop.DataAccess.Repository.IRepository
 {
-    public interface ICompanyRepository : IRepository<Category>
+    public interface ICompanyRepository : IRepository<Company>
     {
         void Update(Company obj);
      

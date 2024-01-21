@@ -9,7 +9,7 @@ namespace DressShop.Models
 {
     public class Company
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         [Required]
         public string Name { get; set; }   
         public string? StreetAddress { get; set; }
