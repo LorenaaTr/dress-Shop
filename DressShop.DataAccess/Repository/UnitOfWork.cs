@@ -14,10 +14,15 @@ namespace DressShop.DataAccess.Repository
         public ICategoryRepository Category { get; private set; }
         public ICompanyRepository Company { get; private set; }
         public IProductRepository Product { get; private set; }
+        public IShoppingCartRepository ShoppingCart { get; private set; }
         public IApplicationUserRepository ApplicationUser { get; private set; }
+
+        public IApplicationUserRepository ApplicationUserRepository => throw new NotImplementedException();
+
         public UnitOfWork(ApplicationDbContext db) 
         {
             _db = db;
+            ShoppingCart = new ShoppingCartRepository(_db);
             ApplicationUser = new ApplicationUserRepository(_db);
             Category = new CategoryRepository(_db);
             Product = new ProductRepository(_db);
