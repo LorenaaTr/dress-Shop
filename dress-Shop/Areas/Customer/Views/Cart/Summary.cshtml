@@ -9,7 +9,7 @@
 				<div class="row px-4">
 					<div class="col-6">
 						<h5 class="pt-2 text-white">
-							Shopping Cart
+							Order Summary
 						</h5>
 					</div>
 					<div class="col-6 text-end">
@@ -110,6 +110,7 @@
 					<div class="col-12 col-md-8 pt-2">
 						<p style="color:maroon; font-size:14px;">
 							Estimate Arrival Date:
+							@DateTime.Now.AddDays(7).ToShortDateString() - @DateTime.Now.AddDays(14).ToShortDateString()
 
 						</p>
 					</div>
