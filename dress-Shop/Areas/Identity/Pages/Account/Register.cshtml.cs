@@ -121,6 +121,7 @@ namespace dress_Shop.Areas.Identity.Pages.Account
             public string? City { get; set; }
             public string? State { get; set; }
             public string? PhoneNumber { get; set; }
+            public string? PostalCode { get; set; }
             public int? CompanyId { get; set; }
             [ValidateNever]
             public IEnumerable<SelectListItem> CompanyList { get; set; }
@@ -172,6 +173,7 @@ namespace dress_Shop.Areas.Identity.Pages.Account
                 user.Name = Input.Name;
                 user.State = Input.State;
                 user.PhoneNumber = Input.PhoneNumber;
+                user.PostalCode = Input.PostalCode;
 
                 if (Input.Role==SD.Role_Company) { 
                     user.CompanyId=Input.CompanyId;
