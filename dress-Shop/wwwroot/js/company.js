@@ -4,7 +4,7 @@ var dataTable;
 $(document).ready(function () {
     loadDataTable();
 });
-////////
+
 function loadDataTable() {
     dataTable = $('#tblData').DataTable({
         "ajax": { url: '/admin/company/getall' },
@@ -28,8 +28,7 @@ function loadDataTable() {
         ]
     });
 }
-/////////////
-////////////
+
 function Delete(url) {
     Swal.fire({
         title: "Are you sure?",
@@ -53,4 +52,3 @@ function Delete(url) {
     });
 
 }
-////////////
