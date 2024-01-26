@@ -12,6 +12,7 @@ namespace dress_Shop.Areas.Customer.Controllers
 {
     [Area("customer")]
     [Authorize]
+
     public class CartController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -39,6 +40,7 @@ namespace dress_Shop.Areas.Customer.Controllers
             }
             return View(ShoppingCartVM);
         }
+
 
         public IActionResult Summary()
         {
@@ -153,6 +155,7 @@ namespace dress_Shop.Areas.Customer.Controllers
             }
             return RedirectToAction(nameof(OrderConfirmation), new { id=ShoppingCartVM.OrderHeader.Id});
         }
+
 
         public IActionResult OrderConfirmation(int id)
         {
