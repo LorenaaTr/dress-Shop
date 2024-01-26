@@ -8,6 +8,7 @@ namespace DressShop.DataAccess.DBInitializer
 {
     public interface IDBInitializer
     {
+        void Initialize();
 
     }
 }
