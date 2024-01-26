@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Security.Claims;
 
-
+///////
 namespace dress_Shop.Areas.Customer.Controllers
 {
     [Area("Customer")]
@@ -37,7 +37,8 @@ namespace dress_Shop.Areas.Customer.Controllers
             return View(productList);
         }
 
-
+        
+        /// <returns></returns>
         public IActionResult Details(int productId)
         {
             ShoppingCart cart = new()
@@ -94,3 +95,4 @@ namespace dress_Shop.Areas.Customer.Controllers
         }
     }
 }
+/////

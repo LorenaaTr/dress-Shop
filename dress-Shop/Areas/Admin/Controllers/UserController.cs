@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using static System.Net.Mime.MediaTypeNames;
 
-
+//////
 namespace dress_Shop.Areas.Admin.Controllers
 {
     [Area("Admin")]
@@ -27,7 +27,10 @@ namespace dress_Shop.Areas.Admin.Controllers
         {
             return View();
         }
-
+        /// <summary>
+        /// ////
+        /// </summary>
+        /// <returns></returns>
         
         #region API CALLS
         [HttpGet]
@@ -47,3 +50,7 @@ namespace dress_Shop.Areas.Admin.Controllers
         #endregion
     }
 }
+/// <summary>
+/// ////
+/// </summary>
+/// <returns></returns>
