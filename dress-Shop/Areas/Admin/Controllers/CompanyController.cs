@@ -27,6 +27,7 @@ namespace dress_Shop.Areas.Admin.Controllers
             List<Company> objCompanyList = _unitOfWork.Company.GetAll().ToList();
             return View(objCompanyList);
         }
+
         public IActionResult Upsert(int? id)
         {
             if (id == null || id == 0)
@@ -41,6 +42,7 @@ namespace dress_Shop.Areas.Admin.Controllers
                 return View(companyObj);
             }
         }
+
 
         [HttpPost]
         public IActionResult Upsert(Company CompanyObj)
