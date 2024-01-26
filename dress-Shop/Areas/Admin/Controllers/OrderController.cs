@@ -101,6 +101,8 @@ namespace dress_Shop.Areas.Admin.Controllers
             TempData["Success"] = "Order Shipped Successfully.";
             return RedirectToAction(nameof(Details), new { orderId = OrderVM.OrderHeader.Id });
         }
+
+
         [HttpPost]
         [Authorize(Roles = SD.Role_Admin + "," + SD.Role_Employee)]
         public IActionResult CancelOrder()
@@ -121,13 +123,13 @@ namespace dress_Shop.Areas.Admin.Controllers
 
                 _unitOfWork.OrderHeader.UpdateStatus(orderHeader.Id, SD.StatusCancelled, SD.StatusRefunded);
             }
-            else
-            {
+            else {
                 _unitOfWork.OrderHeader.UpdateStatus(orderHeader.Id, SD.StatusCancelled, SD.StatusCancelled);
             }
+
             _unitOfWork.Save();
-            TempData["Success"] = "Order Cancelled Successfully.";
-            return RedirectToAction(nameof(Details), new { orderId = OrderVM.OrderHeader.Id });
+            TempData["Success"] = "Order Cancelled Successfully!";
+            return RedirectToAction(nameof(Details), new { orderId = OrderVM.OrderHeader.Id }); 
 
         }
 
