@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using static System.Net.Mime.MediaTypeNames;
 
+
 namespace dress_Shop.Areas.Admin.Controllers
 {
     [Area("Admin")]
@@ -26,6 +27,7 @@ namespace dress_Shop.Areas.Admin.Controllers
             List<Company> objCompanyList = _unitOfWork.Company.GetAll().ToList();
             return View(objCompanyList);
         }
+
         public IActionResult Upsert(int? id)
         {
             if (id == null || id == 0)
@@ -40,6 +42,7 @@ namespace dress_Shop.Areas.Admin.Controllers
                 return View(companyObj);
             }
         }
+
 
         [HttpPost]
         public IActionResult Upsert(Company CompanyObj)
