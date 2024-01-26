@@ -11,6 +11,7 @@ using System.Security.Claims;
 namespace dress_Shop.Areas.Customer.Controllers
 {
     [Area("Customer")]
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -35,6 +36,7 @@ namespace dress_Shop.Areas.Customer.Controllers
             IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties:"Category");
             return View(productList);
         }
+
 
         public IActionResult Details(int productId)
         {
