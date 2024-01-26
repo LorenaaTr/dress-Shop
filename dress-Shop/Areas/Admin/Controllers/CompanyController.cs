@@ -10,7 +10,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using static System.Net.Mime.MediaTypeNames;
 
-
+/////////
+////////
+///////
 namespace dress_Shop.Areas.Admin.Controllers
 {
     [Area("Admin")]
@@ -22,6 +24,10 @@ namespace dress_Shop.Areas.Admin.Controllers
         {
             _unitOfWork = unitOfWork;
         }
+        /// <summary>
+        /// /
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             List<Company> objCompanyList = _unitOfWork.Company.GetAll().ToList();
@@ -93,3 +99,7 @@ namespace dress_Shop.Areas.Admin.Controllers
         #endregion
     }
 }
+/// <summary>
+/// /
+/// </summary>
+/// <returns></returns>
