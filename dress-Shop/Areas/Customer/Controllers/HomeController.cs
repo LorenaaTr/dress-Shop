@@ -37,7 +37,8 @@ namespace dress_Shop.Areas.Customer.Controllers
             return View(productList);
         }
 
-
+        
+        /// <returns></returns>
         public IActionResult Details(int productId)
         {
             ShoppingCart cart = new()
