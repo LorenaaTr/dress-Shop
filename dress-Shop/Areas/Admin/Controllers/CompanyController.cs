@@ -22,6 +22,7 @@ namespace dress_Shop.Areas.Admin.Controllers
         {
             _unitOfWork = unitOfWork;
         }
+       
         public IActionResult Index()
         {
             List<Company> objCompanyList = _unitOfWork.Company.GetAll().ToList();
